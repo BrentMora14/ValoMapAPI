@@ -4,13 +4,13 @@
         SCUFFED AF
         MINIMIZE BROWSER TO 80% AND FULLSCREEN (F11 FOR CHROME)          */
 
-const slctAscent = document.getElementById('slctAscent');
+const slctHaven = document.getElementById('slctHaven');
 const slctBind = document.getElementById('slctBind');
 const slctBreeze = document.getElementById('slctBreeze');
-const slctIcebox = document.getElementById('slctIcebox');
+const slctFracture = document.getElementById('slctFracture');
 const slctLotus = document.getElementById('slctLotus');
+const slctPearl = document.getElementById('slctPearl');
 const slctSplit = document.getElementById('slctSplit');
-const slctSunset = document.getElementById('slctSunset');
 let counter = 0;
 let bans = 0;
 let picks = 0;
@@ -56,15 +56,12 @@ function addPick(map) {
     buffer.style.backgroundImage = "url(" + mapURL + ")";
 }
 
-slctAscent.addEventListener('click', () => addMap("ascent"))
+slctHaven.addEventListener('click', () => addMap("haven"))
 slctBind.addEventListener('click', () => addMap("bind"))
 slctBreeze.addEventListener('click', () => addMap("breeze"))
 
-slctIcebox.addEventListener('click', () => addMap("icebox"))
+slctFracture.addEventListener('click', () => addMap("fracture"))
 slctLotus.addEventListener('click', () => addMap("lotus"))
+slctPearl.addEventListener('click', () => addMap("pearl"))
+
 slctSplit.addEventListener('click', () => addMap("split"))
-
-slctSunset.addEventListener('click', () => addMap("sunset"))
-
-
-
