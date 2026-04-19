@@ -24,10 +24,10 @@ function addMap(map) {
     else if (counter < 2) {
         addBan(map);
     }
-    else if (counter < 4) {
+    else if (counter < 3) {
         addPick(map);
     }
-    else if (counter < 6) {
+    else if (counter < 5) {
         addBan(map);
     }
     else {
