@@ -17,20 +17,19 @@ let picks = 0;
 
 let mapBans = [];
 
+// Flow: ban, pick, ban, pick, ban, ban, pick
+const flow = ['ban', 'pick', 'ban', 'pick', 'ban', 'ban', 'pick'];
+
 function addMap(map) {
     if (mapBans.includes(map)) {
         return;
     }
-    else if (counter < 2) {
+    if (counter >= flow.length) {
+        return;
+    }
+    if (flow[counter] === 'ban') {
         addBan(map);
-    }
-    else if (counter < 3) {
-        addPick(map);
-    }
-    else if (counter < 5) {
-        addBan(map);
-    }
-    else {
+    } else {
         addPick(map);
     }
 }
